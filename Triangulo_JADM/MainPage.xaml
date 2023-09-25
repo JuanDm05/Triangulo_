@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Triangulo_JADM.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Area de triangulo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="25 ,25 ,25 ,15">
+        <Grid>
+        <Label Grid.Column="0" Grid.Row="0">Lado 1</Label>
+            <Entry  Grid.Column="1" Grid.Row="0" Margin="-80 ,0 ,0 ,0" Placeholder="Lado 1" x:Name="Lado1" Keyboard="Numeric"/>
+        <Label  Grid.Column="0" Grid.Row="1">Lado 2</Label>
+            <Entry  Grid.Column="1" Grid.Row="1" Margin="-80 ,0 ,0 ,0" Placeholder="Lado 2" x:Name="Lado2" Keyboard="Numeric"/>
+        <Label  Grid.Column="0" Grid.Row="2">BaseT</Label>
+            <Entry  Grid.Column="1" Grid.Row="2" Margin="-80 ,0 ,0 ,0" Placeholder="Base" x:Name="BaseT" Keyboard="Numeric"/>
+        <Label  Grid.Column="0" Grid.Row="3">Altura</Label>
+            <Entry   Grid.Column="1" Grid.Row="3" Margin="-80 ,0 ,0 ,0" Placeholder="Altura" x:Name="Altura" Keyboard="Numeric"/>
+        <Label  Grid.Column="0" Grid.Row="5" >Area</Label>
+            <Entry   Grid.Column="1" Grid.Row="5" Margin="-80 ,0 ,0 ,0" Placeholder="Area" x:Name="Area" Keyboard="Numeric" IsEnabled="False"/>
+            <Button  Grid.ColumnSpan="2" Grid.Row="4" Text="calcular" Clicked="Button_Clicked" />
+        </Grid>
+        </StackLayout>
+        <Image Source="isoceles.png" HeightRequest="180" x:Name="isoceles" IsVisible="false"/>
+        <Image Source="escaleno.png" HeightRequest="180" x:Name="escaleno" IsVisible="false" />
+        <Image Source="equilatero.png" HeightRequest="180" x:Name="equilatero" IsVisible="false" />
+    </StackLayout>
+
+</ContentPage>
